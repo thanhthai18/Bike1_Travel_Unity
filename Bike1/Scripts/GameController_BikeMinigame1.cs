@@ -307,6 +307,7 @@ public class GameController_BikeMinigame1 : MonoBehaviour
                 if (startMousePos.y > endMousePos.y + 0.1f)
                 {
                     HideTutorial();
+                    bikeObj.isTut = false;
                     if (!bikeObj.isMove)
                     {
                         bikeObj.isMove = true;
@@ -343,7 +344,7 @@ public class GameController_BikeMinigame1 : MonoBehaviour
                     }
                     //}
                 }
-                if (startMousePos.y + 0.1f < endMousePos.y)
+                if (startMousePos.y + 0.1f < endMousePos.y && !bikeObj.isTut)
                 {
                     Debug.Log("Re Len");
                     isDangRe = true;

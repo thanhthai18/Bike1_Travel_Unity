@@ -83,7 +83,6 @@ public class Bike_BikeMinigame1 : MonoBehaviour
             isBranchState = true;
             if (isTut)
             {
-                isTut = false;
                 var tmpTut = GameController_BikeMinigame1.instance.tutorial1;
                 tmpTut.transform.localPosition = new Vector3(tmpTut.transform.localPosition.x, 2.22f, tmpTut.transform.localPosition.z);
                 tmpTut.SetActive(true);
